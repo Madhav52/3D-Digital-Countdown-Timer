@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    margin: 0px 300px auto;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+.clock{
+    width: auto;
+}
+span .flip-clock-dot{
+    background: #ccc;
+}
+.flip-clock-meridium a {
+    color: #ccc !important;
+}
+span .flip-clock-label {
+    color: #ccc !important;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+
+.flip-clock-divider.days  .flip-clock-label {
+    right: -95px !important; 
+}
+
+.flip-clock-divider.hours .flip-clock-label {
+    right: -100px !important; 
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+    right: -100px !important; 
+}
+
+.flip-clock-divider.seconds .flip-clock-label {
+    right: -100px !important; 
+}
