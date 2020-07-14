@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Countdown Timer Using Flipclock.js</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flipclock.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="flipclock.js"></script>
+</head>
+<body>
+    <div class="clock"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var date = new Date(2020, 6, 16);
+    var today = new Date();
+
+    var dif = date.getTime()/1000 - today.getTime()/1000;
+    var timeLeft = Math.abs(dif);
+
+
+    var clock = $('.clock').FlipClock({
+        autoStart: false,
+        clockFace: 'DailyCounter',
+        countdown: true
+    });
+
+    clock.setTime(timeLeft);
+    clock.start();   
+});
+</script>
+</body>
+</html>
